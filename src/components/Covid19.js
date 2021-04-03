@@ -25,7 +25,7 @@ class Covid19 extends React.Component {
 
 
     fetchData() {
-        fetch('http://api.openweathermap.org/data/2.5/weather?q=Halifax&appid=64021bde9cafb24bbcff4d7093709eb9')
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=Halifax&appid=64021bde9cafb24bbcff4d7093709eb9')
         .then(response => {
           if(response.ok) return response.json();
           throw new Error('Request failed.');
